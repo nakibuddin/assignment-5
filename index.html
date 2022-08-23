@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hire Your Players</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+
+    <style>
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hire Your Favorite Players</h1>
+        <p>Whether you own a boutique company, run a huge conglomerate, or manage a department, <br> hiring issues are probably not uncommon in your world. Most managers mis-hire <br> at least three people before they land their high performing A-Player!</p>
+    </header>
+
+    <br><br>
+    <main class="main-container">
+        <div class="players-container">
+            <section class="players">
+                <div class="">
+                    <img src="image/player-1.png" class="card-img-top" alt="...">        
+                    <h1 class="">Mesut Ozil</h1>                                   
+                    <p><span>36 Goals</span> <span>.</span> <span>120 Assist</span></p>
+                    <button class="btn-select">SELECT</button>
+                </div>
+                
+                <div class="">
+                    <img src="image/player-2.png" class="card-img-top" alt="...">        
+                    <h1 class="">Lionel Messi</h1>                                   
+                    <p><span>36 Goals</span> <span>.</span> <span>120 Assist</span></p>
+                    <button class="btn-select">SELECT</button>
+                </div>
+
+                <div class="">
+                    <img src="image/player-3.png" class="card-img-top" alt="...">        
+                    <h1 class="">Cristiano Ronaldo</h1>                                   
+                    <p><span>36 Goals</span> <span>.</span> <span>120 Assist</span></p>
+                    <button class="btn-select">SELECT</button>
+                </div>
+
+                <div class="">
+                    <img src="image/player-4.png" class="card-img-top" alt="...">        
+                    <h1 class="">Neymar Jr.</h1>                                   
+                    <p><span>36 Goals</span> <span>.</span> <span>120 Assist</span></p>
+                    <button class="btn-select">SELECT</button>
+                </div>
+
+                <div class="">
+                    <img src="image/player-5.png" class="card-img-top" alt="...">        
+                    <h1 class="">Mohamed Salah</h1>                                   
+                    <p><span>36 Goals</span> <span>.</span> <span>120 Assist</span></p>
+                    <button class="btn-select">SELECT</button>
+                </div>
+
+                <div class="">
+                    <img src="image/player-6.png" class="card-img-top" alt="...">        
+                    <h1 class="">Di Maria</h1>                                   
+                    <p><span>36 Goals</span> <span>.</span> <span>120 Assist</span></p>
+                    <button class="btn-select">SELECT</button>
+                </div>
+
+                <div class="">
+                    <img src="image/player-7.jpg" class="card-img-top" alt="...">        
+                    <h1 class="">Philippe Coutinho</h1>                                   
+                    <p><span>36 Goals</span> <span>.</span> <span>120 Assist</span></p>
+                    <button class="btn-select">SELECT</button>
+                </div>
+
+                <div class="">
+                    <img src="image/player-8.jpg" class="card-img-top" alt="...">        
+                    <h1 class="">Renato Sanches</h1>                                   
+                    <p><span>36 Goals</span> <span>.</span> <span>120 Assist</span></p>
+                    <button class="btn-select">SELECT</button>
+                </div>
+
+                <div class="">
+                    <img src="image/player-9.jpeg" class="card-img-top" alt="...">        
+                    <h1 class="">Sergio Ramos</h1>                                   
+                    <p><span>36 Goals</span> <span>.</span> <span>120 Assist</span></p>
+                    <button class="btn-select">SELECT</button>
+                </div>
+
+                <div class="">
+                    <img src="image/player-10.png" class="card-img-top" alt="...">        
+                    <h1 class="">Kylian Mbappe</h1>                                   
+                    <p><span>36 Goals</span> <span>.</span> <span>120 Assist</span></p>
+                    <button class="btn-select">SELECT</button>
+                </div>
+            </section>
+        </div>
+        
+        <section class="side-bar">
+            <div class="players-list">
+                <h1>Selected-V</h1>
+                <ol id="order-list">  
+                                                     
+                </ol> 
+            </div>
+            
+            <div class="calculation-box">
+                <h1>Budget</h1>
+                
+                <div class="flex">
+                    <p>Per Player</p>
+                    <input id="player-budget" class="input-style" type="text">
+                </div>
+
+                <button id="btn-calculate">Calculate</button>
+                <div class="flex">
+                    <p>Player Expanses:</p>
+                    <p class="expanses-margin">$ <span id="player-expanses">00</span></p>
+                </div>
+
+                <div class="flex">
+                    <p>Manager</p>
+                    <input id="manager-expanse" class="input-style" type="text">
+                </div>
+
+                <div class="flex">
+                    <p>Coach</p>
+                    <input id="coach-expanse" class="input-style" type="text">
+                </div>
+
+                <button id="btn-calculate-total">Calculate Total</button>
+
+                <div class="flex">
+                    <p>Total:</p>
+                    <p id="total-expanses-color" class="expanses-margin"> $ <span id="total-expanses">00</span> </p>
+                </div>               
+            </div>            
+        </section>
+    </main> <br><br>
+
+    <footer>
+        <hr>
+        <br><br>
+        <p>Copyright @ 2022 All Rights Reserved.</p>   
+        <br><br><br>   
+    </footer>
+    
+    <script src="js file.js"></script>
+    
+    <script>        
+        const items = document.getElementsByClassName('btn-select');
+        for(const item of items){
+            item.addEventListener('click', function(){                                
+                displayItem(item);         
+            })
+        }
+
+        document.getElementById('btn-calculate').addEventListener('click', function(){
+            playerExpansesCalculate();
+        })
+
+        document.getElementById('btn-calculate-total').addEventListener('click', function(){
+            totalExpanseCalculate();
+        })
+                       
+
+    </script>    
+</body>
+</html>
+
+
+

@@ -1,0 +1,154 @@
+
+body{
+    background-color: #151515;
+    margin: 0px;
+}
+
+
+/* :::::::::::::::::::::::::::::::::::: header section design :::::::::::::::::::::::::::::::: */
+header{
+    height: 450px;
+    background-color: #000000;
+}
+header h1{
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 70px;
+    color: #FF5E19;            
+    text-align: center;
+    margin: 0px;
+    padding-top: 100px;
+}
+header p{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+
+
+/* :::::::::::::::::::::::::::::::::::: main section design :::::::::::::::::::::::::::::::: */
+.main-container{
+    display: flex;
+    width: 80%;            
+    margin: auto;
+
+    /* column-gap used for putting gap between (side bar) and (grid container) */
+    column-gap: 20px;   
+}
+.players-container{
+    width: 75%;
+}
+
+
+
+.players{
+    display: grid;
+    grid-template-columns:  repeat(3,1fr);
+    gap: 20px;                
+}
+.players div{
+    background-color: #0D0D0D;
+    border: 1px solid #434343;
+    /* padding: 5px;  */            
+}
+.players img{
+    width: 100%;
+}
+.players h1{
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+.players p{
+    text-align: center;
+    margin-top: 10px;
+}
+.players span{
+    color: #B3B3B3;
+    margin-right: 3px;            
+}
+.players button, #btn-calculate, #btn-calculate-total{
+    background-color: #015196;
+    color: white;
+    border: 0px;
+    border-radius: 0px;
+    
+    display: block;            
+    width: 85%;
+    height: 40px;
+    font-weight: 600;
+    margin: auto;            
+    margin-bottom: 15px;
+}
+
+
+        /* :::::: Side bar design ::::::: */
+.side-bar{
+    width: 25%;    
+}  
+.side-bar div{
+    /* if i remove    border: 1px solid red;   this line my div is move 20px from top  */
+    border: 1px solid #0D0D0D;
+}
+.players-list h1, .calculation-box h1{
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    font-weight: 500;
+} 
+.players-list{
+    background-color: #0D0D0D;
+    height: 355px;
+    margin-bottom: 20px;
+}                
+.players-list li{
+    color: white;
+    margin-left: 15px; 
+    margin-bottom: 25px;                       
+}
+
+.calculation-box{
+    background-color: #0D0D0D;
+    color: white;        
+}
+.calculation-box p{
+    margin-left: 20px;            
+}
+.calculation-box input{
+    width: 110px;
+    height: 35px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 0;
+    background-color: #0D0D0D;
+    margin-right: 20px;
+}
+/* why .calculation-box input:focus{} not working, although .calculation-box input:hover{} work properly*/
+.calculation-box input:focus{
+    border-radius: 0;
+    border: 1px solid red;
+    
+} 
+.flex{
+    display: flex;            
+    align-items: center;
+    justify-content: space-between;
+}   
+.expanses-margin{
+    margin-right: 20px;
+} 
+#total-expanses-color{
+    color: #FF5E19;
+}         
+
+
+/* :::::::::::::::::::::::::::::::::::: footer section design :::::::::::::::::::::::::::::::: */
+footer p{
+    text-align: center;
+    color: white;
+}
+
